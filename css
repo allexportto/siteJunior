@@ -1,0 +1,24 @@
+/* ... (restante do seu CSS) */
+
+/* Centralizando a seção de bandeiras */
+.img-bandeiras {
+    display: flex;
+    justify-content: center; /* Centraliza os itens na direção horizontal */
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto; /* Centraliza o container das bandeiras */
+}
+
+/* Centralizando o footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* ... outros estilos */
+}
+
+/* Centralizando o conteúdo dentro do footer (opcional) */
+footer .container {
+    text-align: center;
+}
