@@ -1,24 +1,46 @@
-/* ... (restante do seu CSS) */
-
-/* Centralizando a seção de bandeiras */
-.img-bandeiras {
-    display: flex;
-    justify-content: center; /* Centraliza os itens na direção horizontal */
-    flex-wrap: wrap;
-    gap: 10px;
-    max-width: 500px;
-    margin: 0 auto; /* Centraliza o container das bandeiras */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .img-bandeiras {
+        justify-content: center;
+    }
+}
+nav ul li a {
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #FFD700; /* Exemplo de cor para hover */
+}
+.whatsapp-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+.whatsapp-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-/* Centralizando o footer */
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* ... outros estilos */
-}
-
-/* Centralizando o conteúdo dentro do footer (opcional) */
-footer .container {
-    text-align: center;
-}
